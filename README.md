@@ -18,8 +18,8 @@ node --version
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
-   cd <project-name>
+   git clone https://github.com/Abdul0925/Frontend-Case-Study.git
+   cd Frontend-Case-Study
    ```
 
 2. **Install dependencies**
@@ -60,46 +60,6 @@ pnpm dev
 
 The development server will start at `http://localhost:5173` by default. The page will automatically reload when you make changes to the source files.
 
-## Building for Production
-
-To create a production build:
-
-Using npm:
-```bash
-npm run build
-```
-
-Using yarn:
-```bash
-yarn build
-```
-
-Using pnpm:
-```bash
-pnpm build
-```
-
-The built files will be generated in the `dist` directory.
-
-## Preview Production Build
-
-To preview the production build locally:
-
-Using npm:
-```bash
-npm run preview
-```
-
-Using yarn:
-```bash
-yarn preview
-```
-
-Using pnpm:
-```bash
-pnpm preview
-```
-
 ## Project Structure
 
 ```
@@ -107,7 +67,10 @@ pnpm preview
 ├── src/            # Source files
 │   ├── assets/     # Project assets (images, fonts, etc.)
 │   ├── components/ # Reusable components
-│   ├── styles/     # CSS/SCSS files
+│   ├── context/    # React context providers
+│   ├── data/       # Static data and constants
+│   ├── pages/      # Page components and routes
+│   ├── types/      # TypeScript type definitions
 │   ├── App.jsx     # Main App component
 │   └── main.jsx    # Application entry point
 ├── index.html      # HTML template
@@ -116,65 +79,17 @@ pnpm preview
 └── README.md       # This file
 ```
 
-## Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run linter (if configured)
-- `npm run test` - Run tests (if configured)
-
 ## Environment Variables
 
 Create a `.env` file in the root directory for environment variables:
 
 ```env
-VITE_API_URL=http://localhost:3000/api
-VITE_APP_TITLE=My Vite App
+VITE_MAPBOX_TOKEN=
 ```
 
-Access them in your code with `import.meta.env.VITE_API_URL`
+Access them in your code with `import.meta.env.VITE_MAPBOX_TOKEN`
 
 ## Customization
-
-### Vite Configuration
-
-Modify `vite.config.js` to customize build settings, add plugins, or configure development server options.
-
-### Port Configuration
-
-To run on a different port, you can:
-
-1. Modify `vite.config.js`:
-   ```js
-   export default {
-     server: {
-       port: 3000
-     }
-   }
-   ```
-
-2. Or use command line:
-   ```bash
-   npm run dev -- --port 3000
-   ```
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Port already in use**
-   - Vite will automatically try the next available port
-   - Or specify a different port using `--port` flag
-
-2. **Node version compatibility**
-   - Ensure you're using Node.js 18+ for best compatibility
-
-3. **Clear cache**
-   ```bash
-   rm -rf node_modules package-lock.json
-   npm install
-   ```
 
 ### Getting Help
 
@@ -182,14 +97,13 @@ To run on a different port, you can:
 - Review error messages in the terminal and browser console
 - Ensure all dependencies are properly installed
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test your changes
-5. Submit a pull request
+## Screenshots of project
 
-## License
+![image](https://github.com/user-attachments/assets/b1d9bd77-049b-4ff6-a954-7e08c1f15052)
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+![image](https://github.com/user-attachments/assets/0507da8f-8aa2-4c1f-9e4b-64b3b50d6b49)
+
+![image](https://github.com/user-attachments/assets/9d3b087a-a97f-4c24-925b-947428856ed5)
+
+![image](https://github.com/user-attachments/assets/b0f19504-fd73-44b0-b31c-8c8e49a44fae)
