@@ -4,7 +4,7 @@ import { useProfiles } from './ProfileContext';
 import { MapMarker } from '../types';
 
 
-const MAPBOX_TOKEN = 'your_token';
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN as string;
 
 interface MapContextType {
   map: mapboxgl.Map | null;
